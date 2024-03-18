@@ -14,14 +14,14 @@ module.exports = {
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "noodle",
-      "path": "./noodle/"
+      name: `noodle`,
+      path: `${__dirname}/noodle/`,
     }
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "copy",
-      "path": "./src/pages/"
+      name: `copy`,
+      path: `${__dirname}/src/pages/`,
     }
   }]
 };
