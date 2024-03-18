@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap');
+$display-font: 'Tilt Warp', sans-serif;
+$text-font: Chivo, sans-serif;
+$beeg-heavy: 900;
+
+//COLORS
+
+//Block Colors
+$object-color: #fbb7b7;
+$background-color: #8072fa;
+
+//Text Colors
+$hover-color: #FF7428; 
+$link-color: #ff8c4d;
+
+//Spacing
+$spacer: 20px;
+$spacer-half: math.div($spacer, 2);
+$spacer-quarter: math.div($spacer, 4);

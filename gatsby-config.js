@@ -6,7 +6,7 @@ module.exports = {
     title: `Noodle Is a Doodle`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -14,16 +14,14 @@ module.exports = {
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "images"
+      "name": "noodle",
+      "path": "./noodle/"
+    }
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "pages",
+      "name": "copy",
       "path": "./src/pages/"
-    },
-    __key: "pages"
+    }
   }]
 };

@@ -1,0 +1,21 @@
+* {
+    font-family: $text-font;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: $beeg-heavy;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    &:hover{
+        color: $hover-color;
+    }
+}
+
+.active {
+    color: #fff;
+}
