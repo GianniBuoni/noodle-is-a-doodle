@@ -21,7 +21,7 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       name: `copy`,
-      path: `${__dirname}/src/pages/`,
+      path: `${__dirname}/src/`,
     }
   }]
 };

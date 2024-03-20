@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../componenets/layout"
-import Content from "./about-copy.mdx"
+import Content from "../componenets/about-copy.mdx"
 import Seo from "../componenets/seo"
 
 const About = () => {

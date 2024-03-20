@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../componenets/layout"
 import Seo from "../componenets/seo"
-import Gallery from "../componenets/gallery"
+import Gallery from "./gallery"
 
 const Index = () => {
   return (

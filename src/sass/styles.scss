@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'global';
 @import 'mixins';
-@import 'grid';
 
 nav {
     align-items: center;
@@ -81,7 +80,7 @@ nav {
     bottom: 0;
     justify-content: right;
     p{
-        padding: $spacer-quarter;
+        padding: $spacer-quarter $spacer-half;
         background-color: $background-color;
         font-size: smaller;
         color: #fff;
@@ -97,3 +96,35 @@ nav, .footer {
     left: 50%;
     transform: translate(-50%,0);
   }
+
+  .post-hero-image {
+    padding-bottom: $spacer;
+}
+
+@include respond-to('medium'){
+    .post-grid {
+        display: grid;
+        gap: $spacer $spacer*2;
+        grid-template-columns: 2fr 1fr;
+        h1, p {
+            width: 100%;
+        }
+        @include respond-to('large'){
+            grid-template-columns: 1.25fr 1fr;
+        }
+    }
+
+    .post-headlines {
+        grid-column: 2;
+        height: fit-content;
+    }
+
+    .post-hero-image {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .post-body {
+        grid-column: 2;
+    }
+}

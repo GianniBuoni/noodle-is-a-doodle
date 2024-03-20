@@ -21,12 +21,11 @@ const Layout = ({children}) => {
       <Link to="/"
         className="logo"
       ><Logo/></Link>
-      {/*<Logo />*/}
       <ul>
         <li>
           <Link to="/" getProps={isActive}>Illustration</Link>
         </li>
-        <li><Link to="/design">Design</Link></li>
+        <li><Link to="/design" getProps={isActive}>Design</Link></li>
         <li>
           <Link to="/about" getProps={isActive}>About</Link>
         </li>
