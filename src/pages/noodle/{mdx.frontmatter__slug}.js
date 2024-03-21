@@ -20,8 +20,8 @@ const ImagePage = ({data, children}) => {
           image = {heroImage}
           alt = {data.mdx.frontmatter.heroimage_alt}
         />
-      </div>  
-      <div className="post-body">{children}</div>
+      </div>
+      {children}
     </div>
     </Layout>
   )
