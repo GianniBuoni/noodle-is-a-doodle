@@ -1,0 +1,27 @@
+.post-grid {
+    display: flex;
+    flex-direction: column;
+    :nth-child(n+3){
+        order: 3;
+    }
+}
+
+.post-headlines {
+    order: 1;
+}
+
+.post-hero-image {
+    order: 2;
+}
+
+@include respond-to ('large') {
+    .post-grid{
+        display: inline;
+    }
+    .post-hero-image {
+        width: 50%;
+        position: relative;
+        float: right;
+        padding-left: $spacer*2;
+    }
+}

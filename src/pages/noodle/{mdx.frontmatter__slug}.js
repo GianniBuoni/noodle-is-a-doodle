@@ -4,23 +4,26 @@ import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Seo from "../../componenets/seo";
 
-const ImagePage = ({data, children}) => {
+const PostPage = ({data, children}) => {
   
   const heroImage = getImage(data.mdx.frontmatter.heroimage)
 
   return (
     <Layout>
     <div className="post-grid">
-      <div className="post-headlines">
-        <h1 style={{paddingBottom: 5}}>{data.mdx.frontmatter.title}</h1>
-        <p>{data.mdx.frontmatter.date}</p>
-      </div>
-      <div className="post-hero-image">
+
+    <div className="post-hero-image">
         <GatsbyImage
           image = {heroImage}
           alt = {data.mdx.frontmatter.heroimage_alt}
         />
       </div>
+
+      <div className="post-headlines">
+        <h1 style={{paddingBottom: 5}}>{data.mdx.frontmatter.title}</h1>
+        <p>{data.mdx.frontmatter.date}</p>
+      </div>
+
       {children}
     </div>
     </Layout>
@@ -46,4 +49,4 @@ export const query = graphql`
   }
 `
 export const Head = ({data}) => <Seo title={data.mdx.frontmatter.title}/>
-export default ImagePage
+export default PostPage
