@@ -17,11 +17,17 @@
 @include respond-to ('large') {
     .post-grid{
         display: inline;
+        p, h1 {
+            width: 100%;
+        }
     }
     .post-hero-image {
         width: 50%;
         position: relative;
-        float: right;
-        padding-left: $spacer*2;
+        float: left;
+        padding-right: $spacer*2;
+    }
+    .post-headlines {
+        padding-bottom: $spacer*2;
     }
 }
